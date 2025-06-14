@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #eef2f3;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background: #87ceeb url('../assets/clouds.png') repeat-x bottom;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+
+#truck {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  width: 80px;
+  height: 50px;
+  background: url('../assets/truck.png') no-repeat center/contain;
+}
+
+.phase {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  padding: 0.3rem;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#message {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 230, 230, 0.9);
+  color: #900;
+  padding: 0.5rem 1rem;
+  border: 1px solid #900;
+  border-radius: 4px;
+  display: none;
+}
