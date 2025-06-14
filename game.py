@@ -72,7 +72,9 @@ def handle_catch(panel):
         spawn_panel()
         hide_message()
         if current_phase == len(phases):
-            window.alert("Félicitations ! Vous avez complété toutes les phases.")
+            window.alert(
+                "Félicitations ! Vous avez complété toutes les phases."
+            )
     else:
         show_message(f"Phase attendue : {phases[current_phase]['name']}")
 
